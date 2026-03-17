@@ -13,9 +13,9 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class ContactComponent {
   contactItems = [
-    { icon: 'phone', text: '+63 936 307 8990' },
-    { icon: 'email', text: 'jefferson.b.guanzing@gmail.com' },
-    { icon: 'link', text: 'linkedin.com/in/JeffersonGuanzing' },
+    { icon: 'phone', text: '+63 936 307 8990', url: 'tel:+639363078990' },
+    { icon: 'email', text: 'jefferson.b.guanzing@gmail.com', url: 'mailto:jefferson.b.guanzing@gmail.com' },
+    { icon: 'link', text: 'https://www.linkedin.com/in/jefferson-guanzing/', url: 'https://www.linkedin.com/in/jefferson-guanzing/' },
     { icon: 'place', text: 'Quezon City, Philippines' }
   ];
 }

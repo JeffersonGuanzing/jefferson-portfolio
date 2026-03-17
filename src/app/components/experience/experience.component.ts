@@ -25,16 +25,28 @@ export class ExperienceComponent {
       ]
     },
     {
-      company: 'Simplified Business Consultancy',
-      role: 'Junior Developer',
-      period: '2023–2024',
-      location: 'Commonwealth, Quezon City',
+      company: 'SBC Simplified Business Consultancy',
+      role: 'L2 Junior Software Developer',
+      period: 'Sep 2024 – Dec 2024',
+      location: 'Quezon City, National Capital Region, Philippines',
       achievements: [
-        'Delivered a production PWA built on Blazor & .NET Core on Microsoft Azure (~500 daily active users)',
+        'Specialized in creating robust and scalable software solutions using C#, Blazor, and .NET Framework with MVC architecture',
+        'Developed Progressive Web Applications (PWAs) and leveraged MudBlazor for intuitive and responsive UI components',
+        'Contributed to client presentations and project management, ensuring alignment with business objectives and timely delivery',
+        'Developed notable projects including a subscription-based business management system, a franchising solution, and an e-commerce platform'
+      ]
+    },
+    {
+      company: 'SBC Simplified Business Consultancy',
+      role: 'Junior Developer',
+      period: 'Nov 2023 – Sep 2024',
+      location: 'Quezon City, National Capital Region, Philippines',
+      achievements: [
+        'Designed and developed efficient full-stack solutions using C#, Blazor, and the .NET Framework',
+        'Delivered a production PWA built on Blazor & .NET Core on Microsoft Azure',
         'Implemented JWT authentication & RBAC following Clean Architecture and MVVM patterns',
         'Built RESTful APIs and EF Core data models, reducing integration defects',
-        'Integrated SignalR for real-time push notifications',
-        'Managed end-to-end delivery via GitHub and Notion'
+        'Integrated SignalR for real-time push notifications'
       ]
     }
   ];

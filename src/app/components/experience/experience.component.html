@@ -1,0 +1,38 @@
+<section id="experience" class="experience-section container">
+    <div class="section-tag mono-font">/professional_journey</div>
+
+    <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item" *ngFor="let exp of experiences; let i = index">
+            <div class="timeline-dot-container">
+                <div class="timeline-dot glow-teal"></div>
+            </div>
+
+            <div class="timeline-content">
+                <mat-card class="experience-card glow-teal">
+                    <mat-card-header>
+                        <div mat-card-avatar class="company-icon">
+                            <mat-icon>business</mat-icon>
+                        </div>
+                        <mat-card-title class="syne-800">{{ exp.company }}</mat-card-title>
+                        <mat-card-subtitle class="mono-font accent-text">{{ exp.role }} | {{ exp.period
+                            }}</mat-card-subtitle>
+                    </mat-card-header>
+
+                    <mat-card-content>
+                        <div class="location-tag mono-font">
+                            <mat-icon>place</mat-icon> {{ exp.location }}
+                        </div>
+                        <ul class="achievements-list">
+                            <li *ngFor="let item of exp.achievements">
+                                <mat-icon class="check-icon">chevron_right</mat-icon>
+                                <span>{{ item }}</span>
+                            </li>
+                        </ul>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</section>

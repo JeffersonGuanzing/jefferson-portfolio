@@ -1,0 +1,53 @@
+.education-section {
+    padding: 100px 40px;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.education-card,
+.certifications-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    height: 100%;
+}
+
+.edu-icon {
+    background: #30363d;
+    color: var(--accent-cyan);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+mat-card-title {
+    font-size: 1.4rem;
+    margin-bottom: 5px !important;
+}
+
+.edu-period {
+    color: var(--accent-amber);
+    font-size: 0.9rem;
+    margin: 15px 0 10px 0;
+}
+
+.edu-desc {
+    color: #8b949e;
+    line-height: 1.6;
+}
+
+.cert-text {
+    color: #c9d1d9;
+    font-size: 0.9rem;
+    white-space: normal !important;
+    padding: 5px 0;
+}
+
+@media (max-width: 800px) {
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,24 @@
+<section id="contact" class="contact-section footer">
+    <div class="container text-center">
+        <h2 class="syne-800 display-heading">Let's Build Something Together.</h2>
+
+        <div class="contact-methods">
+            <mat-list>
+                <mat-list-item *ngFor="let item of contactItems">
+                    <mat-icon matListItemIcon class="accent-text">{{ item.icon }}</mat-icon>
+                    <span class="mono-font">{{ item.text }}</span>
+                </mat-list-item>
+            </mat-list>
+        </div>
+
+        <div class="contact-actions">
+            <button mat-raised-button color="accent" class="huge-btn glow-teal">
+                SEND A MESSAGE
+            </button>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="mono-font">© 2025 Jefferson Guanzing. Built with Angular & Angular Material.</p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,22 @@
+<mat-toolbar color="primary" class="navbar-toolbar sticky-nav">
+    <div class="container navbar-container">
+        <div class="logo-group clickable" (click)="scrollToSection('hero')">
+            <span class="logo-text syne-800">JEFFERSON</span>
+            <span class="logo-dot">.</span>
+        </div>
+
+        <span class="spacer"></span>
+
+        <div class="nav-links hide-mobile">
+            <button mat-button class="mono-font" (click)="scrollToSection('about')">/about</button>
+            <button mat-button class="mono-font" (click)="scrollToSection('experience')">/experience</button>
+            <button mat-button class="mono-font" (click)="scrollToSection('skills')">/skills</button>
+            <button mat-button class="mono-font" (click)="scrollToSection('projects')">/projects</button>
+            <button mat-button class="mono-font" (click)="scrollToSection('education')">/education</button>
+        </div>
+
+        <button mat-raised-button color="accent" class="hire-me-btn glow-teal" (click)="scrollToSection('contact')">
+            HIRE ME
+        </button>
+    </div>
+</mat-toolbar>

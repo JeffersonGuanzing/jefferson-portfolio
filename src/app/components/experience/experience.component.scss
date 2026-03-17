@@ -1,0 +1,118 @@
+.experience-section {
+    padding: 100px 40px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent-cyan), transparent);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.timeline-dot-container {
+    position: absolute;
+    left: -58px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    background: var(--accent-cyan);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.experience-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateX(10px);
+    }
+}
+
+.company-icon {
+    background: #30363d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-cyan);
+}
+
+mat-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 5px !important;
+}
+
+.location-tag {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    color: #8b949e;
+    margin: 15px 0;
+
+    mat-icon {
+        font-size: 1rem;
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.achievements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 12px;
+        color: #c9d1d9;
+        line-height: 1.5;
+        font-size: 0.95rem;
+
+        .check-icon {
+            color: var(--accent-cyan);
+            font-size: 1.2rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            flex-shrink: 0;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline-dot-container {
+        left: -38px;
+    }
+}

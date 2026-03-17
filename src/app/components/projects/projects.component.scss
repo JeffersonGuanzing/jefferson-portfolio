@@ -1,0 +1,113 @@
+.projects-section {
+    padding: 100px 40px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 3rem;
+}
+
+.project-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 255, 242, 0.2);
+        border-color: var(--accent-cyan);
+    }
+}
+
+.project-image-container {
+    height: 200px;
+    background: #0d0d0d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        background: linear-gradient(transparent, rgba(26, 26, 26, 1));
+    }
+}
+
+.project-image-placeholder {
+    mat-icon {
+        font-size: 64px;
+        width: 64px;
+        height: 64px;
+        color: rgba(0, 255, 242, 0.2);
+    }
+}
+
+.project-description {
+    color: #999;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-tags {
+    margin-bottom: 1rem;
+}
+
+.mini-chip {
+    font-size: 0.75rem !important;
+    min-height: 24px !important;
+    background: rgba(0, 255, 242, 0.05) !important;
+    color: #00fff2 !important;
+    border: 1px solid rgba(0, 255, 242, 0.2) !important;
+}
+
+.mat-mdc-card-actions {
+    padding: 1rem !important;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.project-link {
+    color: #888 !important;
+    font-size: 0.8rem;
+    
+    &:hover {
+        color: #fff !important;
+    }
+
+    mat-icon {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 4px;
+    }
+}
+
+.live-link {
+    letter-spacing: 1px;
+    font-weight: 600;
+
+    mat-icon {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

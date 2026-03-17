@@ -1,0 +1,34 @@
+<section id="education" class="education-section container">
+    <div class="section-tag mono-font">/academic_history</div>
+
+    <div class="education-grid">
+        <mat-card class="education-card glow-teal">
+            <mat-card-header>
+                <mat-icon mat-card-avatar class="edu-icon">school</mat-icon>
+                <mat-card-title class="syne-800">BS Information Technology</mat-card-title>
+                <mat-card-subtitle class="mono-font accent-text">Bulacan State University, Sarmiento
+                    Campus</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <p class="edu-period mono-font">2019 — 2023</p>
+                <p class="edu-desc">Focused on software engineering principles, database management, and web
+                    technologies.</p>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="certifications-card glow-teal">
+            <mat-card-header>
+                <mat-icon mat-card-avatar class="edu-icon">verified</mat-icon>
+                <mat-card-title class="syne-800">Certifications</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-list>
+                    <mat-list-item *ngFor="let cert of certifications">
+                        <mat-icon matListItemIcon class="accent-text">check_circle</mat-icon>
+                        <div matListItemTitle class="cert-text">{{ cert }}</div>
+                    </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</section>

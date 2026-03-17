@@ -1,0 +1,37 @@
+<section id="hero" class="hero-section">
+    <div class="grid-bg"></div>
+    <div class="particles-container">
+        <div class="particle p1"></div>
+        <div class="particle p2"></div>
+        <div class="particle p3"></div>
+    </div>
+
+    <div class="container hero-container">
+        <div class="hero-content">
+            <p class="mono-font accent-text glow-text-teal">SYSTEM_INITIALIZED: TRUE</p>
+            <h1 class="hero-name display-font">JEFFERSON <br> GUANZING</h1>
+            <div class="typewriter-container">
+                <span class="typewriter-text mono-font">{{ currentRole() }}</span>
+                <span class="cursor">_</span>
+            </div>
+            <p class="hero-bio">
+                2+ years building scalable fintech and web systems. <br>
+                Expert in C#, .NET Core, and RESTful architecture.
+            </p>
+
+            <div class="hero-actions">
+                <button mat-flat-button color="primary" class="glow-teal" (click)="scrollToSection('experience')">
+                    VIEW MY WORK
+                </button>
+                <button mat-stroked-button color="accent" class="cv-btn">
+                    DOWNLOAD CV
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-indicator" (click)="scrollToSection('about')">
+        <span class="mono-font">SCROLL_DOWN</span>
+        <mat-icon class="scroll-icon">expand_more</mat-icon>
+    </div>
+</section>

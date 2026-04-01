@@ -27,20 +27,20 @@ export class HeroComponent implements OnInit {
     if (this.isDeleting) {
       this.currentRole.set(fullText.substring(0, this.charIndex - 1));
       this.charIndex--;
-      this.typingSpeed = 50;
+      this.typingSpeed = 40; // Faster deleting
     } else {
       this.currentRole.set(fullText.substring(0, this.charIndex + 1));
       this.charIndex++;
-      this.typingSpeed = 100;
+      this.typingSpeed = 80; // Steady typing
     }
 
     if (!this.isDeleting && this.charIndex === fullText.length) {
       this.isDeleting = true;
-      this.typingSpeed = 2000; // Pause at end
+      this.typingSpeed = 3000; // Longer pause at end
     } else if (this.isDeleting && this.charIndex === 0) {
       this.isDeleting = false;
       this.roleIndex = (this.roleIndex + 1) % this.roles.length;
-      this.typingSpeed = 500;
+      this.typingSpeed = 800; // Pause before new role
     }
 
     setTimeout(() => this.type(), this.typingSpeed);

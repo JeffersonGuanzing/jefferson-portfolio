@@ -12,10 +12,41 @@
             </mat-list>
         </div>
 
-        <div class="contact-actions">
-            <button mat-raised-button color="accent" class="huge-btn glow-teal">
-                SEND A MESSAGE
-            </button>
+        <div class="contact-form-container">
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+                <div class="form-row">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-label>Name</mat-label>
+                        <input matInput formControlName="name" placeholder="Your Name">
+                        <mat-error *ngIf="contactForm.get('name')?.hasError('required')">Name is required</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-label>Email</mat-label>
+                        <input matInput formControlName="email" placeholder="Your Email" type="email">
+                        <mat-error *ngIf="contactForm.get('email')?.hasError('required')">Email is required</mat-error>
+                        <mat-error *ngIf="contactForm.get('email')?.hasError('email')">Invalid email format</mat-error>
+                    </mat-form-field>
+                </div>
+
+                <mat-form-field appearance="outline" class="form-field full-width">
+                    <mat-label>Subject</mat-label>
+                    <input matInput formControlName="subject" placeholder="Subject">
+                    <mat-error *ngIf="contactForm.get('subject')?.hasError('required')">Subject is required</mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" class="form-field full-width">
+                    <mat-label>Message</mat-label>
+                    <textarea matInput formControlName="message" placeholder="Your Message" rows="5"></textarea>
+                    <mat-error *ngIf="contactForm.get('message')?.hasError('required')">Message is required</mat-error>
+                </mat-form-field>
+
+                <div class="contact-actions">
+                    <button mat-raised-button color="accent" class="huge-btn glow-teal" type="submit" [disabled]="contactForm.invalid || isSubmitting">
+                        {{ isSubmitting ? 'SENDING...' : 'SEND MESSAGE' }}
+                    </button>
+                </div>
+            </form>
         </div>
 
         <div class="footer-bottom">

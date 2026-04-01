@@ -1,5 +1,6 @@
 <section id="hero" class="hero-section">
     <div class="grid-bg"></div>
+    <div class="scanlines"></div>
     <div class="particles-container">
         <div class="particle p1"></div>
         <div class="particle p2"></div>
@@ -8,23 +9,39 @@
 
     <div class="container hero-container">
         <div class="hero-content">
-            <p class="mono-font accent-text glow-text-teal">SYSTEM_INITIALIZED: TRUE</p>
-            <h1 class="hero-name display-font">JEFFERSON <br> GUANZING</h1>
-            <div class="typewriter-container">
+            <div class="system-tag-container">
+                <p class="mono-font accent-cyan system-tag">
+                    <span class="tag-label">/system_init:</span>
+                    <span class="tag-status">INITIALIZED</span>
+                </p>
+            </div>
+
+            <div class="name-container">
+                <h1 class="hero-name display-font">
+                    <span class="first-name">JEFFERSON</span>
+                    <span class="last-name">GUANZING</span>
+                </h1>
+            </div>
+
+            <div class="typewriter-container glass-panel">
                 <span class="typewriter-text mono-font">{{ currentRole() }}</span>
                 <span class="cursor">_</span>
             </div>
+
             <p class="hero-bio">
-                2+ years building scalable fintech and web systems. <br>
-                Expert in C#, .NET Core, and RESTful architecture.
+                Over 2 years of experience crafting <span class="highlight">high-performance</span> fintech and web
+                systems.
+                Specialized in <span class="highlight">C#</span>, <span class="highlight">.NET Core</span>, and robust
+                <span class="highlight">API Architectures</span>.
             </p>
 
             <div class="hero-actions">
-                <button mat-flat-button color="primary" class="glow-teal" (click)="scrollToSection('experience')">
+                <button mat-flat-button class="btn-primary glow-teal" (click)="scrollToSection('experience')">
                     VIEW MY WORK
                 </button>
-                <a mat-stroked-button color="accent" class="cv-btn" href="assets/Jefferson-Guanzing-Resume.pdf"
-                    download="Jefferson-Guanzing-Resume.pdf">
+                <a mat-stroked-button class="btn-secondary cv-btn glass-panel" href="Jefferson-Guanzing-Resume.pdf"
+                    target="_blank" download="Jefferson-Guanzing-Resume.pdf">
+                    <mat-icon>download</mat-icon>
                     DOWNLOAD CV
                 </a>
             </div>

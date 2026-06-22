@@ -18,11 +18,11 @@ export class SkillsComponent {
     },
     {
       name: 'Frameworks & Libraries',
-      skills: ['Angular', 'Blazor', '.NET Core', 'Entity Framework Core', 'SignalR', 'Node.js', 'React', 'Tailwind CSS']
+      skills: ['Angular', 'Blazor', '.NET Core', 'Entity Framework Core', 'ASP.NET MVC', 'SignalR', 'Node.js', 'React', 'Tailwind CSS', 'jQuery']
     },
     {
       name: 'Architecture & Patterns',
-      skills: ['Clean Architecture', 'MVVM', 'RESTful API Design', 'JWT Auth', 'Real-Time Systems']
+      skills: ['Clean Architecture', 'MVVM', 'RESTful API Design', 'GraphQL', 'JWT Auth', 'Real-Time Systems']
     },
     {
       name: 'Databases',
@@ -30,11 +30,15 @@ export class SkillsComponent {
     },
     {
       name: 'Cloud & DevOps',
-      skills: ['Microsoft Azure', 'Git', 'GitHub']
+      skills: ['Microsoft Azure', 'Azure DevOps', 'GitHub Actions (CI/CD)', 'Git', 'GitHub']
     },
     {
       name: 'Tools',
       skills: ['Postman', 'Figma', 'Notion']
+    },
+    {
+      name: 'AI / LLM',
+      skills: ['AI/LLM Integration', 'Cloud Platforms']
     }
   ];
 }
